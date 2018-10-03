@@ -1,0 +1,26 @@
+---
+name: cmpsc-100-fall-2018-lab5
+break: true
+indent: 4
+---
+
+src/main:
+    java:
+        labfive/ManipulateDna.java:
+            --single 8 --language Java
+            --multi 2 --language Java
+            --fragment "println(" --count 8
+            --fragment "new Date()" --count 1
+            --fragment "substring(" --count 2
+            --fragment "charAt(" --count 2
+            --fragment "String" --count 5
+            --fragment "nextInt(" --count 3
+            --fragment "replace(" --count 4
+            --fragment "toUpperCase(" --count 1
+
+writing/reflection.md:
+    --paragraphs 3 --exact
+    --words 150
+--commits 6
+
+--command "gradle -q --console plain run" --executes
